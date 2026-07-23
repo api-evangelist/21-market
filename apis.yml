@@ -1,7 +1,16 @@
 aid: 21-market
 name: 21 Market
-description: 21 Market is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  21 Market is the API Evangelist network profile for 주식회사 21세기전파상 (21st Century
+  Electronics Shop Co., Ltd.), a South Korean consumer-electronics resale company
+  that operates the Repercent (리퍼센트) service at repercent.com. Repercent buys used
+  smartphones and mobile devices — iPhone, Galaxy, tablets, and laptops — from
+  individual sellers, providing instant online price quotes, fast payment, and a
+  simple pickup/logistics flow for secondhand device trade-in. The company is a
+  500 Global portfolio company and was surfaced into the network as a venture
+  portfolio lead. As of this pass the company publishes no public developer
+  program, API, or documentation surface; this profile captures verified company
+  identity, its live web properties, and probed domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/21-market/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +18,38 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-legal-name: 주식회사 21세기전파상
+x-brand: Repercent (리퍼센트)
+x-ceo: 박영준 (Park Young-jun)
+x-business-registration: 854-81-01496
+x-mail-order-registration: 서울서초-0993
+x-phone: 1544-2980
+x-country: KR
+x-no-api-surface: 'true'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://repercent.com/img/og/default.webp
 tags:
 - Company
+- Consumer Electronics
+- Ecommerce
+- Resale
+- Secondhand
+- Mobile Devices
+- Trade-In
+- South Korea
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +57,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/21-market-domain-security.yml
+- type: Website
+  url: https://repercent.com
 - type: Website
   url: https://21market.kr
+- type: TermsOfService
+  url: https://repercent.com/policy?idx=1
+- type: PrivacyPolicy
+  url: https://repercent.com/policy?idx=0
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
